@@ -5,33 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shell-Roll Coding — Learn to Code for Students</title>
   <meta name="description" content="พื้นที่แบ่งปันความรู้การเขียนโปรแกรมสำหรับเด็กนักเรียน และผู้เริ่มต้น (Thai–English)">
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="Shell-Roll Coding — Learn to Code for Students">
+  <meta property="og:description" content="แบ่งปันความรู้การเขียนโปรแกรมสำหรับนักเรียน สองภาษา ไทย–อังกฤษ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shell-roll-coding.github.io/">
+  <meta property="og:image" content="https://shell-roll-coding.github.io/assets/logo.png">
+  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.png">
   <style>
-    :root{
-      --bg:#0f1116; --card:#151923; --text:#e9edf1; --muted:#a8b3c7; --accent:#ffa74d;
-      --link:#5aa7ff; --line:#23283a;
-    }
+    :root{--bg:#0f1116;--card:#151923;--text:#e9edf1;--muted:#a8b3c7;--accent:#ffa74d;--link:#5aa7ff;--line:#23283a}
     *{box-sizing:border-box}
-    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Thai", "Noto Sans", Arial, sans-serif; background:var(--bg); color:var(--text)}
-    a{color:var(--link); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:980px; margin:0 auto; padding:24px}
-    .hero{display:grid; grid-template-columns:120px 1fr; gap:20px; align-items:center; padding:28px; background:var(--card); border:1px solid var(--line); border-radius:16px}
-    .logo{width:120px; height:120px; border-radius:16px;
-    background:#2b3145 url('Screenshot 2025-09-29 145146.png') center/80% no-repeat}
-    h1{margin:0 0 6px 0; font-size:2rem}
-    .tagline{color:var(--muted); margin:6px 0 0 0}
-    .grid{display:grid; gap:16px; margin-top:22px}
-    @media(min-width:720px){ .grid{grid-template-columns:1fr 1fr}}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px}
-    .card h2{margin:0 0 8px 0; font-size:1.1rem}
-    .cta{display:inline-block; margin-top:10px; padding:10px 14px; border-radius:10px; background:var(--accent); color:#1a1a1a; font-weight:600}
-    footer{margin-top:28px; color:var(--muted); text-align:center}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
-    .pill{display:inline-block; padding:4px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.92rem}
-    .section-title{display:flex; gap:10px; align-items:center; margin:22px 0 8px}
-    hr{border:0; border-top:1px solid var(--line); margin:22px 0}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans Thai","Noto Sans",Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    .hero{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;padding:28px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+    .logo{width:120px;height:120px;border-radius:16px;overflow:hidden;background:#2b3145;display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:contain}
+    h1{margin:0 0 6px 0;font-size:2rem}
+    .tagline{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;gap:16px;margin-top:22px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+    .card h2{margin:0 0 8px 0;font-size:1.1rem}
+    .cta{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#1a1a1a;font-weight:600}
+    footer{margin-top:28px;color:var(--muted);text-align:center}
+    ul{margin:8px 0 0 18px} li{margin:6px 0}
+    .pill{display:inline-block;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.92rem}
+    .section-title{display:flex;gap:10px;align-items:center;margin:22px 0 8px}
+    hr{border:0;border-top:1px solid var(--line);margin:22px 0}
   </style>
 </head>
 <body>
@@ -39,11 +41,14 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="logo" aria-label="Shell-Roll Coding logo"></div>
+      <div class="logo" aria-label="Shell-Roll Coding logo">
+        <!-- ถ้าโลโก้ยังชื่ออื่น ให้แก้ src ให้ตรง -->
+        <img src="assets/logo.png" alt="Shell-Roll Coding logo" loading="eager" decoding="async">
+      </div>
       <div>
         <h1>🐵 Shell-Roll Coding</h1>
         <p class="tagline">พื้นที่แบ่งปันความรู้การเขียนโปรแกรมสำหรับ <b>เด็กนักเรียน</b> และผู้เริ่มต้น — A tiny place to learn & share coding.</p>
-        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap">
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
           <span class="pill">Thai–English</span>
           <span class="pill">Beginner Friendly</span>
           <span class="pill">Python</span>
@@ -75,7 +80,7 @@
       <a class="cta" href="https://github.com/shell-roll-coding" target="_blank" rel="noopener">Visit GitHub Profile</a>
     </div>
 
-    <!-- LINKS TO PROJECTS (edit links later) -->
+    <!-- LINKS TO PROJECTS -->
     <div class="section-title"><h2>หัวข้อแนะนำ / Featured</h2></div>
     <div class="grid">
       <div class="card">
@@ -91,10 +96,7 @@
     </div>
 
     <hr>
-    <footer>
-      © 2025 Shell-Roll Coding · Made for students with fun 🥥
-    </footer>
+    <footer>© 2025 Shell-Roll Coding · Made for students with fun 🥥</footer>
   </div>
 </body>
 </html>
-Add index.html homepage
