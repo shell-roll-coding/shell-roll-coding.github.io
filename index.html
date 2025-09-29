@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shell-Roll Coding — Learn to Code for Students</title>
+  <meta name="description" content="พื้นที่แบ่งปันความรู้การเขียนโปรแกรมสำหรับเด็กนักเรียน และผู้เริ่มต้น (Thai–English)">
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    :root{
+      --bg:#0f1116; --card:#151923; --text:#e9edf1; --muted:#a8b3c7; --accent:#ffa74d;
+      --link:#5aa7ff; --line:#23283a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Thai", "Noto Sans", Arial, sans-serif; background:var(--bg); color:var(--text)}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px; margin:0 auto; padding:24px}
+    .hero{display:grid; grid-template-columns:120px 1fr; gap:20px; align-items:center; padding:28px; background:var(--card); border:1px solid var(--line); border-radius:16px}
+    .logo{width:120px; height:120px; border-radius:16px; background:#2b3145 url('assets/logo.png') center/80% no-repeat}
+    h1{margin:0 0 6px 0; font-size:2rem}
+    .tagline{color:var(--muted); margin:6px 0 0 0}
+    .grid{display:grid; gap:16px; margin-top:22px}
+    @media(min-width:720px){ .grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px}
+    .card h2{margin:0 0 8px 0; font-size:1.1rem}
+    .cta{display:inline-block; margin-top:10px; padding:10px 14px; border-radius:10px; background:var(--accent); color:#1a1a1a; font-weight:600}
+    footer{margin-top:28px; color:var(--muted); text-align:center}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .pill{display:inline-block; padding:4px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.92rem}
+    .section-title{display:flex; gap:10px; align-items:center; margin:22px 0 8px}
+    hr{border:0; border-top:1px solid var(--line); margin:22px 0}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="logo" aria-label="Shell-Roll Coding logo"></div>
+      <div>
+        <h1>🐵 Shell-Roll Coding</h1>
+        <p class="tagline">พื้นที่แบ่งปันความรู้การเขียนโปรแกรมสำหรับ <b>เด็กนักเรียน</b> และผู้เริ่มต้น — A tiny place to learn & share coding.</p>
+        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap">
+          <span class="pill">Thai–English</span>
+          <span class="pill">Beginner Friendly</span>
+          <span class="pill">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (TH) -->
+    <div class="section-title"><h2>เกี่ยวกับเว็บไซต์</h2></div>
+    <div class="card">
+      <p><b>Shell-Roll Coding</b> ทำคอนเทนต์โค้ดดิ้งแบบเข้าใจง่ายสำหรับนักเรียน: อธิบายพื้นฐาน, ตัวอย่างโค้ดสั้น ๆ, และกิจกรรมให้ลองทำจริง</p>
+      <ul>
+        <li>อธิบายแนวคิดโปรแกรมมิ่งแบบเห็นภาพ</li>
+        <li>ตัวอย่างโค้ดภาษา <b>Python</b> ระดับเริ่มต้น</li>
+        <li>ใบงาน/แบบฝึกสั้น ๆ เพื่อฝึกคิด</li>
+      </ul>
+      <a class="cta" href="https://github.com/shell-roll-coding" target="_blank" rel="noopener">ไปที่ GitHub โปรไฟล์</a>
+    </div>
+
+    <!-- ABOUT (EN) -->
+    <div class="section-title"><h2>About (EN)</h2></div>
+    <div class="card">
+      <p><b>Shell-Roll Coding</b> shares beginner-friendly programming content for students: clear fundamentals, tiny code samples, and try-it activities.</p>
+      <ul>
+        <li>Concepts explained in a visual, simple way</li>
+        <li>Starter examples in <b>Python</b></li>
+        <li>Short worksheets / activities</li>
+      </ul>
+      <a class="cta" href="https://github.com/shell-roll-coding" target="_blank" rel="noopener">Visit GitHub Profile</a>
+    </div>
+
+    <!-- LINKS TO PROJECTS (edit links later) -->
+    <div class="section-title"><h2>หัวข้อแนะนำ / Featured</h2></div>
+    <div class="grid">
+      <div class="card">
+        <h2>Lesson 01 — Hello Python</h2>
+        <p>พิมพ์ข้อความแรกของคุณ และรู้จักตัวแปร/ชนิดข้อมูลพื้นฐาน</p>
+        <a href="https://github.com/shell-roll-coding/python-for-kids" target="_blank" rel="noopener">ดูบทเรียน</a>
+      </div>
+      <div class="card">
+        <h2>Logic Games for Kids</h2>
+        <p>เกมฝึกคิดเชิงตรรกะสำหรับเด็ก ประตูสู่การเขียนโปรแกรม</p>
+        <a href="https://github.com/shell-roll-coding/logic-games" target="_blank" rel="noopener">ไปยังโปรเจกต์</a>
+      </div>
+    </div>
+
+    <hr>
+    <footer>
+      © 2025 Shell-Roll Coding · Made for students with fun 🥥
+    </footer>
+  </div>
+</body>
+</html>
+Add index.html homepage
